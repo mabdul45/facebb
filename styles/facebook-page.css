@@ -1,0 +1,113 @@
+header {
+    max-width: 100%;
+    padding: 8px 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.svg1-facebook {
+    width: 20px;
+    max-height: 20px;
+}
+
+.facebook {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item1-child {
+    margin-right: 3px;
+}
+
+.search-item {
+    display: inline-flex;
+    align-items: center;
+    background-color: #E4E6EB;
+    gap: 10px;
+    border-radius: 50px;
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.svg2 {
+    width: 25px;
+    height: 25px;
+}
+
+.flex-item2 {
+    display: flex;
+    gap: 20px;
+    height: 40.3px;
+    align-items: center;
+    text-align: center;
+    padding-top: -3px;
+}
+
+.item2-child {
+    width: 100px;
+    /* max-height: 40.3px; */
+    padding-bottom: 0;
+    height: 40px;
+}
+
+.item2-child:not(:focus):hover {
+    background-color: rgb(221, 217, 217);
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.item2-child:focus {
+    fill: blue;
+    border-bottom: 3px blue solid;
+    height: 40.3px;
+}
+
+.svg3 {
+    max-width: 20px;
+    max-height: 20px; 
+    width: 40px;
+}
+
+.svg3-1 {
+    width: 15px;
+    max-height: 14px;
+}
+
+.flex-item3 {
+    display: flex;
+    gap: 10px;
+}
+
+.item3-child {
+    background-color: #e4e6eb;
+    align-items: center;
+    border-radius: 500px;
+    padding: 8px;
+    width: 38px;
+    height: 38px;
+}
+
+.item3-child-1 {
+    background-color: #e4e6eb;
+    align-items: center;
+    border-radius: 500px;
+    padding: 12px;
+    width: 38px;
+    height: 38px;
+}
+
+.profile, .profile p {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+section {
+    width: 100%;
+    height: 100rem;
+    background-color: grey;
+}

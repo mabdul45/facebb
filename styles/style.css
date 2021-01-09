@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.div {
+    background: #edf0f5;
+    height: 720px;
+}
+
+body .content {
+    background: #edf0f5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+article {
+    padding: 20px 0 14px;
+}
+
+article img {
+    height: 106px;
+    width: 301px;
+    margin-bottom: -1rem;
+    margin-left: -1.7rem;
+}
+
+article p {
+    font-size: 26px;
+    width: 490px;
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;;
+}
+
+section {
+    margin: 9rem 0rem 0rem -2rem;
+    width: 400px;
+}
+
+form {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    font-family: Helvetica, Arial, sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    margin-bottom: 1.7rem;
+}
+
+input {
+    height: 49px;
+    border: 1px solid #ccd0d5;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+input:focus-visible {
+    border: 1px solid #ccd0d5;
+}
+
+input:focus {
+    border: 1px solid #ccd0d5;
+}
+
+
+input::placeholder {
+    font-size: 17px;
+    padding: 14px 16px;
+    color: grey;
+}
+
+form .login button {
+    width: 100%;
+    height: 2.8rem;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+form:nth-child(5) {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: .5px solid #dadde1;
+}
+
+.new-account {
+    text-align: center;
+    padding: 1rem;
+}
+
+form .new-account button {
+    text-align: center;
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    height: 50px;
+    width: 240px;
+    font-size: 19px;
+    font-weight: bold;
+    font-family:  Helvetica, Arial, sans-serif;
+}
+
+.forgotten-password {
+    text-align: center;
+    color: #1877f2;;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 1rem;
+}
+
+section span {
+    text-align: center;
+    margin-left: 28px;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+footer {
+    margin: 12px auto;
+    padding: 12px 010px;
+    height: 145px;
+    max-height: 145px;
+}
+
+footer, p a {
+    color: #737373;
+    font-size: 12px;
+    font-family:  Helvetica, Arial, sans-serif;
+    max-width: 1000px;
+}
+
+footer p:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    padding-bottom: 8px;
+    max-width: 700px;
+}
+
+footer hr:nth-child(2) {
+    width: 980px;
+    border: 1px solid #dddfe2;
+}
+
+footer P:nth-child(3) {
+    padding-top: 8px;
+    width: 1000px;
+    align-items: center;
+    line-height: 20px;
+    word-spacing: 12px;
+}
+
+footer p:nth-child(4) {
+    padding-top: 18px;
+}
