@@ -56,20 +56,21 @@ form {
     margin-bottom: 1.7rem;
 }
 
-input {
+input[type="email"], input[type='password'] {
     height: 49px;
     border: 1px solid #ccd0d5;
     font-family: Helvetica, Arial, sans-serif;
 }
 
-input:focus-visible {
-    border: 1px solid #ccd0d5;
+form input[type="email"]:focus, input[type='password']:focus {
+    display: block;
+    outline: 1px solid  #ccd0d5;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
 }
-
-input:focus {
-    border: 1px solid #ccd0d5;
-}
-
 
 input::placeholder {
     font-size: 17px;
@@ -112,6 +113,12 @@ form .new-account button {
     font-size: 19px;
     font-weight: bold;
     font-family:  Helvetica, Arial, sans-serif;
+    transition: ease-in-out 0.2s;
+}
+
+.new-account:hover button {
+    background-color: #2f7a20;
+    
 }
 
 .forgotten-password {
@@ -120,6 +127,10 @@ form .new-account button {
     font-size: 14px;
     font-family: Helvetica, Arial, sans-serif;
     padding: 1rem;
+}
+
+.forgotten-password:hover {
+    text-decoration: underline;
 }
 
 section span {

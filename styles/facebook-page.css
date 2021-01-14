@@ -40,7 +40,7 @@ header {
 .flex-item2 {
     display: flex;
     gap: 20px;
-    height: 42px;
+    height: 47px;
     align-items: center;
     text-align: center;
     padding: 20px 0 0 0;
@@ -48,23 +48,45 @@ header {
 
 .item2-child {
     width: 100px;
-    height: 42px;
+    height: 47px;
+    position: relative;
 }
 
-.item2-child:not(:focus):hover {
+.item2-child:not(:focus):hover{
     background-color: rgb(221, 217, 217);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 4px;
     height: 42px;
-    margin-bottom: 13px;
+    margin-bottom: 17px; 
 }
 
 .item2-child:focus {
     fill: blue;
     border-bottom: 4px blue solid;
-    height: 42px;
+    height: 47px;
+}
+
+.item2-child span {
+    display: none;
+}
+
+.item2-child:not(:focus):hover span {
+    display: block;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    left: 15px;
+    background-color: black;
+    color: white;
+    max-width: 100%;
+    padding: 20px;
+    height: 40px;
+    border-radius: 10px;
+    transition: all ease-in 50s !important;    
 }
 
 .svg3 {
@@ -132,6 +154,34 @@ header {
     fill: blue;
     background-color: rgb(133, 133, 226);
 }
+
+.item3-child span, .item3-child-5 span {
+    display: none;
+}
+
+.item3-child:not(:focus):hover span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px -25px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 89px;
+    height: 40px;
+} 
+
+.item3-child-5:hover span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px -32px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 70px;
+    height: 40px;
+} 
 
 section {
     width: 100%;
