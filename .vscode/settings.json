@@ -1,6 +1,6 @@
 {
     "projectManager.git.baseFolders": [
-        "Facebook-002"
+        "Facebook-trial"
     ],
     "git.postCommitCommand": "push"
 }
