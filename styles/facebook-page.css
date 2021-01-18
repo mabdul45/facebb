@@ -2,6 +2,8 @@ body {
     background-color: #F0F2F5;
 }
 
+/* header */
+
 header {
     max-width: 100%;
     padding: 0 15px 0;
@@ -69,7 +71,7 @@ header {
     margin-bottom: 13px; 
 }
 
-.item2-child:focus {
+.item2-child:focus, .item2-child:active {
     fill: blue;
     border-bottom: 3px blue solid;
     height: 43px;
@@ -194,10 +196,22 @@ header {
     height: 40px;
 } 
 
+/* section */
+
 section {
     width: 100%;
-    height: 100rem;
 }
+
+.svg-less-more {
+    height: 16px;
+    width: 16px;  
+}
+
+#more {
+    display: none;
+}
+
+
 
 @media screen and (max-width: 1235px){
     .flex-item1 input {
