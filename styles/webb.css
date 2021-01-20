@@ -5,15 +5,16 @@
 
 body {
     font-family : arial, helvetica, sans-serif;
+    margin: 0 auto;
 }
 
-.mobile-container{
-    /* max-width:1100px;  */
+.mobile-container {
+    width: 550px;
     margin: auto; 
     background-color: #b0b8b4ff; 
-    height:900px; 
-    color:white; 
-    border-radius:10px;
+    height: 595px; 
+    color: white; 
+    border-radius: 10px;
 }
 
 .topnav{

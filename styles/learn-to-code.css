@@ -9,6 +9,7 @@ body {
     background-repeat: no-repeat;
     font: arial, helvetica, sans-serif;
     color: rgb(235, 231, 231);
+    border-radius: 10px;
 }
 
 .page {
@@ -23,6 +24,35 @@ body {
     margin: 2px auto;
     font-family: sans-serif;
 }
+
+.page h3 a {
+    position: absolute;
+    left: 370px;
+    top: 15px;
+    background-color: rgb(124, 34, 34);
+    width: 50px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 10px;
+    box-shadow: -4px 6px 2px 0px white;
+}
+
+.page h3 a:hover {
+    background-color: rgb(150, 60, 18);
+    fill: rgb(223, 172, 79);
+}
+
+.page h3 a:active {
+    background-color:rgb(124, 34, 34);
+    box-shadow:-4px 2px 2px 0px white;
+    transform: translateY(4px);
+  }
+
+h3 a svg {
+    fill: rgb(214, 194, 158) !important;
+}
+
+
 
 .page p {
     width: 510px;
@@ -71,4 +101,16 @@ body {
     color: rgb(214, 194, 158);
     background-color: rgb(124, 34, 34);
     border-radius: 50px;
+    box-shadow: 4px 6px 2px 0px white;
+}
+
+.button:hover {
+    background-color: rgb(150, 60, 18);
+    color: rgb(223, 172, 79);
+}
+
+.button:active {
+    background-color: rgb(124, 34, 34);
+    box-shadow: 4px 3px 2px 0px white;
+    transform: translateY(4px);
 }
