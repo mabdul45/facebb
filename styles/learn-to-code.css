@@ -1,0 +1,74 @@
+body {
+    margin: 0 auto;
+    width: 550px;
+}
+
+.page {
+    background-image: url(../images/Background_Images/web-development-background.jpg);
+    background-size: center cover;
+    background-repeat: no-repeat;
+    font: arial, helvetica, sans-serif;
+    color: rgb(235, 231, 231);
+}
+
+.page {
+    padding: 10px;
+}
+
+.page h3 {
+    font-size: 35px;
+    word-spacing: 4px;
+    font-weight: 750;
+    width: max-content;
+    margin: 2px auto;
+    font-family: sans-serif;
+}
+
+.page p {
+    width: 510px;
+    word-spacing: 3px;
+    line-height: 25px;
+    margin-top: 50px;
+    margin-left: auto;
+}
+
+.page li::before {
+    content: "\2713";
+    color: rgb(139, 130, 130);
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+.page ul {
+    margin: 30px 30px;
+    line-height: 28px;
+}
+
+.page svg {
+    fill: rgb(240, 132, 132);
+    width: 20px;
+    height: 20px;
+}
+
+.page .warning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 162px;
+    word-spacing: 4px;
+    width: 500px;
+}
+
+.button {
+    display: block;
+    padding: 20px;
+    width: 300px;
+    margin: 2px 100px;
+    text-align: center;
+    color: rgb(214, 194, 158);
+    background-color: rgb(124, 34, 34);
+    border-radius: 50px;
+}
