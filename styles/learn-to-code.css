@@ -5,11 +5,12 @@ body {
 
 .page {
     background-image: url(../images/Background_Images/web-development-background.jpg);
-    background-size: center cover;
+    background-size: cover;
     background-repeat: no-repeat;
     font: arial, helvetica, sans-serif;
     color: rgb(235, 231, 231);
     border-radius: 10px;
+    position: relative;
 }
 
 .page {
@@ -21,14 +22,14 @@ body {
     word-spacing: 4px;
     font-weight: 750;
     width: max-content;
-    margin: 2px auto;
+    margin: 10px auto;
     font-family: sans-serif;
 }
 
 .page h3 a {
     position: absolute;
-    left: 370px;
-    top: 15px;
+    left: 30px;
+    top: 20px;
     background-color: rgb(124, 34, 34);
     width: 50px;
     text-align: center;
@@ -87,7 +88,7 @@ h3 a svg {
     align-items: center;
     justify-content: center;
     gap: 6px;
-    margin-bottom: 162px;
+    margin-bottom: 210px;
     word-spacing: 4px;
     width: 500px;
 }
