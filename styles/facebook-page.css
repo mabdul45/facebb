@@ -1,6 +1,7 @@
 body {
     background-color: #F0F2F5;
     position: relative;
+    font: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
 }
 
 /* header */
@@ -19,28 +20,32 @@ header {
 .flex-item1 {
     display: flex;
     justify-content: space-around;
-    gap: 5px;
-    padding: 8px 0 5PX;
+    gap: 10px;
+    padding: 8px 0 5px;
 }
 
-.item1-child {
-    margin-right: 3px;
-}
 
 .search-item {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    gap: 5px;
     background-color: #ebedf5;
-    gap: 6px;
     border-radius: 50px;
-    width: 240px;
+    width: 230px;
     height: 40px;
-    padding-left: 10px;
+    
 }
 
 .svg-search{
     width: 20px;
     height: 20px;
+    margin-left: 6px;
+}
+
+.search-item input::placeholder {
+    font-size: 15px;
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
 }
 
 .svg2 {
@@ -51,20 +56,20 @@ header {
 .flex-item2 {
     display: flex;
     gap: 20px;
-    height: 43px;
+    height: 38px;
     align-items: center;
     text-align: center;
     padding: 28px 0 0 0;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .item2-child {
     width: 100px;
-    height: 43px;
+    height: 54px;
     position: relative;
 }
 
-.item2-child:not(:focus):hover{
+.item2-child:hover{
     background-color:  #ebedf5;
     display: flex;
     align-items: center;
@@ -77,14 +82,15 @@ header {
 .item2-child:focus, .item2-child:active {
     fill: blue;
     border-bottom: 3px blue solid;
-    height: 43px;
+    max-height: 54px;
+    height: 47px; 
 }
 
 .item2-child span {
     display: none;
 }
 
-.item2-child:not(:focus):hover span {
+.item2-child:hover span {
     display: block;
     position: absolute;
     display: flex;
@@ -102,9 +108,8 @@ header {
 }
 
 .svg3 {
-    max-width: 20px;
-    max-height: 20px; 
-    width: 40px;
+    max-width: 24px;
+    max-height: 24px; 
 }
 
 .svg3-1 {
@@ -114,26 +119,32 @@ header {
 
 .flex-item3 {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     padding: 8.5px 0 0 0;
+    position: relative;
 }
 
 .item3-child {
     background-color: #e4e6eb;
+    display: flex;
+    justify-content: center;
     align-items: center;
     border-radius: 500px;
-    padding: 8px;
-    width: 38px;
-    height: 38px;
+    /* padding: 9px; */
+    width: 40px;
+    height: 40px;
+    position: relative;
 }
 
 .item3-child-5 {
     background-color: #e4e6eb;
+    display: flex;
+    justify-content: center;
     align-items: center;
     border-radius: 500px;
     padding: 12px;
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
 }
 
 .profile {
@@ -164,6 +175,7 @@ header {
 
 .item3-child:hover, .item3-child-5:hover {
     background-color: #c2c4c7;
+    position: relative;
 }
 
 .item3-child:focus, .item3-child-5:focus {
@@ -173,6 +185,7 @@ header {
 
 .item3-child span, .item3-child-5 span {
     display: none;
+    position: absolute;
 }
 
 .item3-child:not(:focus):hover span {
@@ -180,6 +193,7 @@ header {
     align-items: center;
     justify-content: center;
     margin: 12px -25px;
+    position: absolute;
     background-color: black;
     color: white;
     border-radius: 10px;
@@ -191,6 +205,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
     margin: 12px -32px;
     background-color: black;
     color: white;
@@ -203,17 +218,39 @@ header {
 
 section {
     position: absolute;
-    margin-top: 70px;
     width: 100%;
     z-index: -1;
 }
 
 section div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
     max-width: 300px;
-    overflow-y: scroll;
-    scrollbar-he: 10px;
-    scrollbar-highlight-color: black;
-    scrollbar-color: white;
+    overflow: hidden;
+    max-height: 600px;
+    margin-top: 60px;
+}
+
+section div:first-child:hover {
+    overflow: auto;
+    margin-left: 4px;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 8px;
+    height: 500px !important;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: #ced0d4;
+    border-radius: 15px;
+    height: 200px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    width: 20px;
 }
 
 .svg-less-more {
@@ -227,5 +264,13 @@ section div:first-child {
 @media screen and (max-width: 1235px){
     .flex-item1 input {
         display: none;
+    }
+
+    .search-item {
+        width: 50px;
+        height: 45px;
+        text-align: center;
+        margin-left: -8;
+        gap: 0;
     }
 }
